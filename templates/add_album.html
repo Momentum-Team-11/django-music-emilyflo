@@ -1,0 +1,13 @@
+{% block content %}
+<h1>all album</h1>
+
+<div>
+  <form action="{% url 'add_album' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div>
+      <button type="submit">add album</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
