@@ -1,12 +1,14 @@
+{% extends "base.html" %}
+
 {% block content %}
 
-<h1>Albums</h1>
+<h1>albums</h1>
 
 <p><a href="{% url 'add_album' %}">add new album</p>
 
 <div>
     {% for album in albums %}
-    <div>
+    <div class="albums">
         <h2><a href="{% url 'album_detail' pk=album.pk %}">{{ album.title }}</a></h2>
             <div>
                 <h3>{{ album.artist }}</h3>
