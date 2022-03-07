@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>album detail</h1>
+<div>
+    {% if album %}
+    <h2>{{ album.title }}</h2><br/>
+    <h3>{{ album.artist }}</h3>
+    <h4>{{ album.created_at }}</h4>
+    {% endif %}
+</div>
+{% endblock %}

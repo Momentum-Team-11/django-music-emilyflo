@@ -104,7 +104,7 @@ and your directory structure would look like:
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
-│   ├── urls.py
+│   ├── urls.pydjangod
 │   └── wsgi.py
 └── manage.py
 
